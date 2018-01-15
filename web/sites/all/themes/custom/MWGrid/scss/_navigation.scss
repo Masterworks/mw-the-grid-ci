@@ -1,0 +1,318 @@
+body.admin-menu {
+    margin-top: 28px !important;
+}
+#admin-menu 
+{
+	.control-label 
+	{
+		display: inline;
+		margin-top: -23px;
+		position: relative;
+		float: right;
+		z-index: 999;
+		text-indent: 9999px;
+		overflow: hidden;
+		width: 20px;
+		height: 20px;
+		
+		&::before
+		{
+			content: '\f002';
+			font-family: 'FontAwesome';
+			display: inline-block;
+			color: $darkgray;
+			height: 20px;
+			width: 20px;
+			top: 0;
+			left: 0;
+			position: absolute;
+			text-indent: 0px !important;
+		}
+	}
+	a 
+	{
+		font-size: 12px !important;
+	}
+}
+#navbar 
+{
+	@extend .bg-purple;
+	
+    width: 100% !important;
+    margin: 0;
+    max-width: 100%;
+    border: 0;
+	border-radius: 0px;
+	position: fixed;
+	z-index: 999;
+
+	a
+	{
+		color: $gray;	
+	}
+	.active a
+	{
+		background-color: rgba(0,0,0,.25);	
+		color: $white;
+		text-decoration: none;
+	}
+	
+	.logo
+	{
+		max-width: 170px;
+		padding: 10px 10px 10px 10px;
+		margin: 2px 0px 0px 0px;
+		
+		img
+		{
+			width: 100%;	
+		}
+	}
+	.name.navbar-brand 
+	{
+		font-family: 'Open Sans Condensed';
+		font-weight: bold;
+		font-size: 27px;
+		text-transform: lowercase;
+		margin: 10px 3px 0px -2px;
+		padding: 0;
+		height: auto;
+		
+	}
+	/*
+	.name.navbar-brand 
+	{
+		font-family: 'Open Sans';
+		font-weight: bold;
+		font-size: 14px;
+		text-transform: uppercase;
+		margin: 7px 9px 7px -3px;
+		color: $green !important;
+		padding: 5px;
+		height: 35px;
+		border: 2px solid $green;
+	}
+	*/
+	.navbar-toggle 
+	{
+    	margin-right: 33px;
+	}
+}
+.tabs--primary
+{
+	border-bottom: 0;
+	height: $padL;
+	padding-top: $padL;
+	transition: height 500ms ease;
+	overflow: hidden;
+	margin-top: -55px;
+	float: right;
+	width: 100%;
+	text-align: right;
+	font-size: 0;
+	position: fixed;
+	cursor: pointer;
+	z-index: 999;
+	pointer-events: none;
+	
+	li, li.active
+	{
+		float: none;
+		display: inline-block;
+		width: auto;
+		right: 0;
+		text-align: right;
+		@extend .mini-header;
+		color: $white;	
+		position: relative;
+		z-index: 11;
+		pointer-events: all !important;
+		
+		border-radius: 0;
+		border: 0;
+		
+		& a
+		{
+			color: $white;
+			@extend .mini-header;		
+			border-radius: 0;
+			border: 0;
+		}
+		&.active a:hover, & a:hover, &.active a, & a:active, & a:visited
+		{
+			background-color: rgba(0,0,0,.5) !important;	
+			border-radius: 0;
+			border: 0;
+		}
+	}
+	&::before
+	{
+		@include fontStack('Open Sans', 24, 30, 600, 1, "");
+		color: $white;
+		content: '\f013';
+		display: block;
+		font-family: 'FontAwesome';
+		display: inline-block;
+		margin-right: $padS;	
+		font-weight: normal;
+		float: right;
+		margin-top: -40px;
+		margin-left: -$padM;
+		cursor: pointer;
+		pointer-events: all !important;
+	}
+	&::after 
+	{
+		display: block;
+		background-color: $darkgray;
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		margin-top: 0;
+		top: 45px;
+		z-index: 10;
+		transition: height 600ms ease;
+	}
+}
+.tabs--primary.activated
+{
+	height: 80px;
+	transition: height 500ms ease;
+	cursor: pointer;
+	
+	&::after
+	{
+		height: 35px;
+		transition: height 400ms ease;
+	}
+}
+.breadcrumb {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    border-radius: 0px;
+}
+.pagination li.active 
+{
+	border-radius: 4px;	
+}
+.tabs--secondary, .pagination
+{
+	margin: 0px auto !important;
+	text-align: center;
+	padding-top: $padM;
+	width: 100%;
+	font-size: 0;
+	
+	li
+	{
+		display: inline-block;
+		
+		a, span
+		{
+			padding: $padS;
+			@extend .midi-header;	
+		}
+		a.active, &.active, &.active span
+		{
+			@extend .bg-green;
+			background-color: $green !important;
+			border-color: $green;
+			@extend .f-white;
+			
+			&:hover, &:active
+			{
+				color: $white;	
+				border-color: $green;
+			}			
+		}
+		a:not(.active), li:not(.active) span
+		{
+			@extend .f-green;
+			@extend .bg-white;	
+			
+			&:hover, &:active
+			{
+				color: $green;	
+			}
+		}
+	}
+}
+.vertical-tabs
+{
+	ul li a, .vertical-tabs-panes
+	{
+		border-radius: 0px !important;
+    	box-shadow: none !important;
+    	border-color: #cdcdcd !important;
+	}
+}
+
+body:not(.page-node-)
+{
+	.action-links
+	{
+		@extend .centered;
+		font-size: 0;
+			
+		li
+		{
+			display: inline-block;	
+		
+			a
+			{
+				margin: 5px;
+				@extend .btn;
+				@extend .mini-header;
+				color: $white !important;
+			}
+		}
+		
+		.btn
+		{
+			padding: $padS;
+			@extend .midi-header;	
+		}
+	}
+}
+.page-node-
+{
+	.action-links
+	{
+		text-align: right;
+		font-size: 0;
+		padding-right: $padS;
+		position: absolute;
+		width: 100%;
+			
+		li
+		{
+			display: inline-block;	
+		
+			a
+			{
+				@extend .mini-header;
+				color: $white;
+			}
+		}
+		
+		.btn
+		{
+			padding: $padS;
+			@extend .midi-header;	
+		}
+	}
+}
+.contextual-links, .contextual-links-trigger {
+	border-radius: 0px !important;	
+}
+
+#navbar-collapse .region.region-navigation {
+	display: inline-block;
+	width: 400px;
+	float: right;
+	padding-top: 7px;
+}
+
+#navbar-collapse .region.region-navigation .form-group {
+	margin-bottom: 0px;
+}

@@ -1,0 +1,160 @@
+/**
+ *Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// Set the proper directory for the Bootstrap Glyphicon font.
+$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Open+Sans+Condensed:300,300i,500,500i,700,700i';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+$green: #3aa01f/*green*/;
+$red: #a12364/*maroon*/;
+$yellow: #f3bc47/*yellow*/;
+$blue: #179ab2/*blue*/;
+$orange: #f36347/*orange*/;
+$purple: #454357;
+$white: #ffffff;
+$darkgray: #333333;
+$midgray: #e9e9e9;
+$lightgray: #cdcdcd;
+$gray: #f1f1f1;
+
+$colorScheme: ($green:green, $red:red, $yellow:yellow, $blue:blue, $orange:orange, $purple:purple, $white:white, $darkgray:darkgray, $midgray:midgray, $lightgray:lightgray, $gray:gray);
+
+$padS: 15px;
+$padM: 30px;
+$padL: 45px;
+$padXL: 60px;
+
+$size: 16;
+$tracking: 0;
+$leading: 24;
+$family: 'Open Sans';
+$weight: normal;
+$override: false;
+
+@mixin fontStack($family, $size, $leading, $weight, $tracking, $override)
+{
+	@if ($override != "")
+	{
+		font-family: $family, sans-serif + $override;
+		font-size: $size + px + $override;
+		font-weight: $weight + $override;
+		letter-spacing: $tracking + px + $override;
+	}
+	@else
+	{
+		font-family: $family, sans-serif;
+		font-size: $size + px;
+		font-weight: $weight;
+		letter-spacing: $tracking + px;
+	}
+
+	@if ($leading)
+	{
+		line-height: $leading + px + $override;
+	}
+	@else
+	{
+		@if ($size)
+		{
+			@if $size <= 14
+			{
+				line-height: $size + 4 + px + $override;
+			}
+			@else if $size >= 35 && $size < 60
+			{
+				line-height: $size + 4 + px + $override;
+			}
+			@else if $size > 14 && $size < 35
+			{
+				line-height: $size + 8 + px + $override;
+			}
+			@else
+			{
+				line-height: $size + px + $override;
+			}
+		}
+		@else
+		{
+			line-height: 100% + $override;
+		}
+	}
+}
+
+.box
+{
+	padding: $padM;
+
+	&-small
+	{
+		padding: $padS;
+	}
+	&-medium
+	{
+		padding: $padM;
+	}
+	&-large
+	{
+		padding: $padL;
+	}
+	&-xlarge
+	{
+		padding: $padXL;
+	}
+}
+.centered
+{
+	margin: 0px auto;
+	text-align: center;
+}
+
+.custom-container
+{
+	max-width: 1170px;
+}
+
+.mini-header
+{
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+	font-weight: bold;
+}
+.midi-header
+{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+	font-weight: bold;
+}
+.maxi-header
+{
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 2px;
+	font-weight: bold;
+}
+
+@each $color, $colorName in $colorScheme
+ {
+  .bg-#{"" + $colorName} {
+    background-color: #{$color};
+  }
+}
+
+@each $color, $colorName in $colorScheme
+ {
+  .f-#{"" + $colorName} {
+    color: #{$color};
+  }
+}

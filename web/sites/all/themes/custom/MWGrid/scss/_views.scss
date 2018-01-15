@@ -1,0 +1,290 @@
+.view td.in-Progress{
+	@extend .light-blue, .lighten-5;
+}
+
+.view td.in-Review{
+	@extend .light-green, .lighten-4;
+}
+
+.view td.in-QC{
+	@extend .yellow, .lighten-4;
+}
+
+.view td.Deploy{
+	@extend .orange, .lighten-4;
+}
+
+td.views-field-title a{
+	font-size: 14px;
+}
+
+.view .img-responsive{
+	display: inline;
+	margin-left: 5px;
+	margin-bottom: 3px;
+}
+
+.views-display-column
+{
+	/*@extend .box-medium;
+	border: 1px solid $purple;*/
+
+	@extend .bg-gray;
+	background-color: $gray !important;
+
+	padding: $padM !important;
+
+	/*&:nth-child(2n + 2)
+	{
+		@extend .bg-midgray;
+		background-color: $midgray !important;
+	}*/
+
+	.field
+	{
+		border-bottom: 1px solid $purple;
+		padding-bottom: $padS;
+		margin-bottom: $padS;
+	}
+	h3
+	{
+		@extend .midi-header;
+		padding: 0;
+		text-align: left;
+		/*margin: 0px 10px 10px 10px;
+		border-bottom: 1px solid;
+   		text-align: center;*/
+	}
+}
+.views-ui-display-tab-bucket .ctools-button-processed
+{
+    right: 10px;
+    top: 10px;
+}
+.views-display-setting
+{
+	span.label, a, & :not(a) span
+	{
+		@extend .mini-header;
+	}
+	a
+	{
+		padding: 2px 0px !important;
+		margin: 0;
+	}
+	span
+	{
+		@extend .mini-header;
+		padding: 2px 0px !important;
+		line-height: 100%;
+		margin: 0;
+	}
+	a, span:not(.label)
+	{
+		color: $green !important;
+		padding: .2em .6em .3em;
+		line-height: 100%;
+	}
+	span.label
+	{
+		margin-right: 5px;
+
+		&:nth-child(2n + 3)
+		{
+			margin: 0px -3px !important;
+		}
+	}
+}
+.views-ui-display-tab-bucket
+{
+	margin-bottom: $padM;
+	padding: 10px !important;
+	border: 1px solid $purple !important;
+	/*border-right: 0px !important;
+	border-bottom: 0px !important;
+	border-top: 0px !important;*/
+}
+.ctools-dropbutton ul, ul.contextual-links
+{
+	background-color: $gray !important;
+}
+.ctools-content
+{
+	border-right: 0px !important;
+}
+#views-display-menu-tabs
+{
+	overflow: auto;
+}
+
+.ctools-button, #views-display-menu-tabs a
+{
+    border: none;
+    border-radius: 4px;
+    background-color: $green;
+    color: $white !important;
+	@extend .mini-header;
+
+	ul, li, div, a, .icon
+	{
+		color: $white !important;
+		background-color: transparent !important;
+		@extend .mini-header;
+	}
+
+	a.ctools-twisty
+	{
+		border: none !important;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		&::after
+		{
+			display: inline-block;
+			color: $white;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			text-indent: 0px !important;
+			vertical-align: middle;
+			line-height: 100%;
+			margin-top: 6px;
+			margin-left: 3px;
+			font-weight: bold;
+			font-size: 15px;
+		}
+	}
+
+	&.open
+	{
+		a.ctools-twisty
+		{
+			&::after
+			{
+				content: '-';
+				margin-top: -2px;
+			}
+		}
+	}
+	&:not(.open)
+	{
+		a.ctools-twisty
+		{
+			&::after
+			{
+				content: '+';
+			}
+		}
+	}
+}
+.ui-dialog
+{
+    background-color: $gray;
+    border-radius: 0px;
+    border-color: $purple;
+    border: 1px solid $purple;
+
+	.ui-dialog-titlebar-close
+	{
+		overflow: auto;
+    	height: 60px;
+		width: 100%;
+    	padding: 10px;
+
+		position: absolute;
+		margin-bottom: -22px;
+		text-align: right;
+		right: 0px;
+		background: transparent !important;
+		border: 0px !important;
+		border-radius: 0px !important;
+
+		&::after
+		{
+			padding: 5px 10px;
+			border-radius: 4px;
+			@extend .bg-green;
+			@extend .f-white;
+			@extend .midi-header;
+			content: 'X';
+			@include fontStack('Open Sans', 20, 0, 0, 0, '');
+		}
+	}
+
+	.ui-dialog-titlebar, .ui-widget-header
+	{
+		border: none !important;
+	}
+	#views-ajax-popup
+	{
+		border-radius: 0px;
+		background-color: $gray;
+
+		#views-ajax-title, .views-override
+		{
+			background-color: transparent !important;
+		}
+		.views-override
+		{
+
+		}
+		#edit-options
+		{
+			border: 0px !important;
+			margin-bottom: 0px;
+		}
+
+		.form-buttons
+		{
+			background: transparent;
+			border: 1px solid $purple !important;
+			margin: -1px;
+			padding: $padS;
+    		text-align: center;
+		}
+	}
+}
+.btn.create-new
+{
+	margin-top: $padM;
+}
+.view-campaign-summary
+{
+	.view-header, .view-content
+	{
+		@extend .custom-container;
+		margin: 0px auto;
+	}
+	.view-header
+	{
+		@extend .box-medium;
+		text-align: center;
+		padding-top: 0px !important;
+	}
+
+	.even
+	{
+		background-color: $gray !important;
+	}
+	thead td:not(.views-field).views-field-title
+	{
+		@extend .midi-header;
+		@extend .centered;
+		@extend .f-purple;
+	}
+}
+.views-field
+{
+	a
+	{
+		@extend .mini-header;
+		color: $purple !important;
+		/*@extend .box-small;*/
+		display: block;
+	}
+}

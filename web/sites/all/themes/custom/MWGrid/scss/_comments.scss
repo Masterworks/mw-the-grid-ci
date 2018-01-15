@@ -1,0 +1,303 @@
+#comments .field-type-file{
+	background-color: $midgray !important;
+}
+
+#comments, .page-comment-reply .comment-form/*, .page-comment .region*/
+{
+	@extend .custom-container;
+	@extend .f-purple;
+	@extend .bg-white;
+	@extend .box-medium;
+	margin: 0px auto;
+
+	*:not(.btn):not(.form-submit):not(textarea):not(.new):not(.links li):not(.user-picture)
+	{
+		border-radius: 0px !important;
+		background-color: transparent;
+	}
+	textarea
+	{
+		border-radius: 0px !important;
+		background-color: transparent;
+	}
+
+	.user-picture
+	{
+		width: 60px;
+		height: 60px;
+		overflow: hidden;
+		border-radius: 100px;
+		margin: -25px 0px 5px 0;
+		float: right;
+		display: inline-block;
+
+		img
+		{
+			margin: 0;
+			width: 100%;
+		}
+	}
+
+
+	.username
+	{
+		color: $green !important;
+		@extend .mini-header;
+	}
+
+	h2
+	{
+		border-left: 0px !important;
+
+		&::before
+		{
+			content: '';
+		}
+
+		&.title
+		{
+		font-size: 1.4em !important;
+		font-weight: bold;
+		}
+
+		&.comment-form
+		{
+			font-size: 1.2em !important;
+			font-weight: bold;
+		}
+	}
+
+	h3
+	{
+		font-size: 0.8em !important;
+		border-left: 0px !important;
+
+		&::before
+		{
+			content: '';
+		}
+	}
+
+	.comment
+	{
+		@extend .bg-white;
+		padding: $padS;
+		background-color: $white !important;
+		border: 1px solid $midgray !important;
+		margin-bottom: $padM;
+
+		h3
+		{
+			display: inline-block;
+			border-left: 0px !important;
+
+			a
+			{
+				@extend .f-purple;
+				@include fontStack('Open Sans', 16, '', bold, 0, '');
+			}
+		}
+
+		.field-name-comment-body
+		{
+			@extend .box-medium;
+			@extend .bg-gray;
+			background-color: $gray !important;
+		}
+
+		.new
+		{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			@extend .mini-header;
+			border-radius: 100px;
+			background-color: $yellow;
+			text-align: center;
+			margin-right: 5px;
+		}
+	}
+
+	.links
+	{
+		float: right;
+
+		li a
+		{
+			@extend .btn;
+			background-color: $white !important;
+			border: 1px solid $midgray !important;
+			margin: 9px -5px -9px 0px;
+			border-radius: 4px !important;
+			color: $darkgray !important; 
+
+			@extend .mini-header;
+			font-size: 11px !important;
+		}
+	}
+
+
+
+	.submitted
+	{
+
+		span
+		{
+			font-size: 11px;
+		}
+
+		.permalink
+		{
+			text-indent: 999px;
+			display: inline;
+			font-size: 0;
+			height: 20px;
+
+			&::before
+			{
+				content: '\f0c1';
+				display: inline;
+				margin-top: 0px;
+				width: 20px;
+				height: 20px;
+				overflow: hidden;
+				font-family: 'FontAwesome';
+				color: $green !important;
+				text-indent: 0px !important;
+				font-size: 13px;
+			}
+		}
+	}
+
+}
+
+/* Adrien's edits to clean up comments section */
+
+#comments .comment h3 {
+	display:none;
+}
+
+#comments .comment .content .field-name-comment-body {
+	padding: 5px 0 !important;
+}
+
+#edit-author--2, #edit-author--4 {
+	display:none;
+}
+
+#comments .filter-wrapper {
+	display:none;
+}
+
+#comments .comment {
+	margin-right:50px;
+}
+
+#comments .comment-by-viewer {
+	margin-left:50px;
+	margin-right:0px;
+}
+
+#comments .file-widget .input-group-btn .btn {
+	padding: 6px 12px 7px 12px !important;
+}
+
+#comments .comment .field-name-comment-body, .page-comment-reply .comment-form .comment .field-name-comment-body, #comments .field-name-field-file-upload {
+	background-color: transparent !important;
+}
+
+#comments .submitted .permalink {
+	display:none;
+}
+
+#comments .comment .field-name-field-your-comment-will-notify-, #comments .comment .field-name-field-file-upload {
+	background-color: transparent !important;
+	padding: 10px 0 0 !important;
+}
+
+#comments .comment .links {
+	display: none;
+}
+
+#comments .comment-by-viewer .links, .admin-menu #comments .comment .links {
+	display: block !important;
+}
+
+#comments .comment .comment-reply {
+	display: none;
+}
+
+#comments .links li a {
+	padding: 3px 8px;
+}
+
+#comments .comment {
+	border-color: gainsboro;
+	margin-bottom: 15px;
+}
+
+#comments .comment-form .field-name-field-file-upload .panel-heading {
+	display: none;
+}
+
+@media (min-width:1100px) {
+
+#comments .comment-form .field-name-field-your-comment-will-notify- .input-group-addon {
+	display: none;
+}
+
+#comments .comment-form {
+	white-space: nowrap;
+}
+
+#comments .comment-form .input-group-btn, .input-group .form-control {
+	display: table;
+}
+
+#comments .comment-form .field-name-field-file-upload .file-widget .form-control {
+	margin-bottom: 10px;
+}
+
+#comments .comment-form .field-name-field-file-upload .btn {
+	border-radius: 4px !important;
+}
+
+#comments .comment-form .field-name-field-your-comment-will-notify- .form-text {
+	border-radius: 0px;
+}
+}
+
+#comments .comment-form .field-name-field-file-upload .file-widget .form-control, #comments .field-name-field-your-comment-will-notify- .input-group .form-control {
+	border-left: 1px solid #cdcdcd !important;
+}
+
+#comments .filefield-source-plupload .control-label, #comments .filefield-source-plupload .help-block, #comments .form-type-managed-file .help-block {
+	display:none;
+}
+
+#comments .ds-form, #comments .col-sm-8 {
+	background-color: #f1f1f1 !important;
+}
+
+#comments .field-name-field-your-comment-will-notify- .input-group {
+	width: 100%;
+}
+
+#comments .form-actions {
+	background-color: #f1f1f1 !important;
+	padding: 0 30px 30px;
+}
+
+#comments .col-sm-8, #comments col-sm-4 {
+	padding-bottom: 0px;
+}
+
+.plupload_filelist_footer {
+	height: 32px;
+}
+
+/* End Adrien's edits */
+
+
+

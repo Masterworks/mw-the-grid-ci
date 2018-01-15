@@ -1,0 +1,56 @@
+@media screen and (max-width: 600px)
+{
+	.page-node-:not(.page-node-edit)
+	{
+		.field-label, .field-items
+		{
+			display: block !important;	
+		}
+	}
+	
+	.group-routing-info, .group-campaign-routing-info
+	{
+		position: relative !important;
+		width: 100%;
+		background-color: $purple !important;
+		
+		.panel-body
+		{
+			width: 100%;
+			float: none;	
+			position: relative;
+			z-index: 400;
+			
+			.field
+			{
+				width: auto;
+				max-width: auto;	
+				
+				.field-label, .field-items
+				{	
+					display: inline-block !important;
+				}
+			}
+		}
+	}
+	.node:not(.node-campaign)
+	{
+		.field.field-name-title
+		{
+			h1,h2,h3,h4,h5,h6,h7,h8,h9
+			{
+				padding: 15px !important;	
+			}
+		}
+	}
+
+	.views-table
+	{
+		th, td
+		{
+			display: block;
+
+			/****SEE JQUERY FOR REORGANIZING FIX****/
+		}
+	}
+}
