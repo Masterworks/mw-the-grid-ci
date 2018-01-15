@@ -108,7 +108,12 @@
     "drupal/views_bulk_operations": "^3.4",
     "drupal/views_data_export": "^3.2",
     "drupal/views_pdf": "^1.7",
-    "drupal/views_popup": "^3.0"
+    "drupal/views_popup": "^3.0",
+    "drupal/content_type_clone": "dev-1.x",
+    "drupal/feeds_httpfetcher_append_headers": "dev-1.x",
+    "drupal/feedspreview": "dev-1.x",
+    "drupal/module_builder": "dev-2.x",
+    "drupal/pdf_export": "dev-1.x"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.2",

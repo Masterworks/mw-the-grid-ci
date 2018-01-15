@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "97a0734a3e7f94c12f2b7204926af8c6",
+    "content-hash": "d0fb7bc2a000d340af9b1678669c0f0c",
     "packages": [
         {
             "name": "composer/installers",
@@ -1059,6 +1059,48 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/conditional_fields"
             }
+        },
+        {
+            "name": "drupal/content_type_clone",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/content_type_clone",
+                "reference": "a1539ebaeac6fa5699756a2c8971e26030adf164"
+            },
+            "require": {
+                "drupal/drupal": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.x-dev",
+                    "datestamp": "1492285742",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Fiaty",
+                    "homepage": "https://www.drupal.org/user/3448299"
+                }
+            ],
+            "description": "Allows to clone content types from a simple link added to each content type in the content type list.",
+            "homepage": "https://www.drupal.org/project/content_type_clone",
+            "support": {
+                "source": "http://cgit.drupalcode.org/content_type_clone"
+            },
+            "time": "2017-03-05T15:40:02+00:00"
         },
         {
             "name": "drupal/crumbs",
@@ -2331,6 +2373,208 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ez_timezone_select"
             }
+        },
+        {
+            "name": "drupal/feeds",
+            "version": "2.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/feeds",
+                "reference": "7.x-2.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/feeds-7.x-2.0-beta4.zip",
+                "reference": "7.x-2.0-beta4",
+                "shasum": "195e5d0d3795f8f1981f8f83f5c0c7bc27d275a6"
+            },
+            "require": {
+                "drupal/ctools": "*",
+                "drupal/drupal": "~7.0",
+                "drupal/job_scheduler": "*"
+            },
+            "require-dev": {
+                "drupal/ctools": "*",
+                "drupal/date": "*",
+                "drupal/entity_translation": "*",
+                "drupal/features": "*",
+                "drupal/feeds_xpathparser": "*",
+                "drupal/i18n_taxonomy": "*",
+                "drupal/link": "*",
+                "drupal/rules": "*",
+                "drupal/variable": "*",
+                "drupal/views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.0-beta4",
+                    "datestamp": "1506437520",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Ian Ward",
+                    "homepage": "https://www.drupal.org/user/4736"
+                },
+                {
+                    "name": "MegaChriz",
+                    "homepage": "https://www.drupal.org/user/654114"
+                },
+                {
+                    "name": "Will White",
+                    "homepage": "https://www.drupal.org/user/32237"
+                },
+                {
+                    "name": "alex_b",
+                    "homepage": "https://www.drupal.org/user/53995"
+                },
+                {
+                    "name": "e2thex",
+                    "homepage": "https://www.drupal.org/user/189123"
+                },
+                {
+                    "name": "febbraro",
+                    "homepage": "https://www.drupal.org/user/43670"
+                },
+                {
+                    "name": "franz",
+                    "homepage": "https://www.drupal.org/user/581844"
+                },
+                {
+                    "name": "jmiccolis",
+                    "homepage": "https://www.drupal.org/user/31731"
+                },
+                {
+                    "name": "kking",
+                    "homepage": "https://www.drupal.org/user/24399"
+                },
+                {
+                    "name": "tobby",
+                    "homepage": "https://www.drupal.org/user/154797"
+                },
+                {
+                    "name": "tristanoneil",
+                    "homepage": "https://www.drupal.org/user/340659"
+                },
+                {
+                    "name": "twistor",
+                    "homepage": "https://www.drupal.org/user/473738"
+                },
+                {
+                    "name": "yhahn",
+                    "homepage": "https://www.drupal.org/user/264833"
+                }
+            ],
+            "description": "Aggregates RSS/Atom/RDF feeds, imports CSV files and more.",
+            "homepage": "https://www.drupal.org/project/feeds",
+            "support": {
+                "source": "http://cgit.drupalcode.org/feeds"
+            }
+        },
+        {
+            "name": "drupal/feeds_httpfetcher_append_headers",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/feeds_httpfetcher_append_headers",
+                "reference": "9ac33adfe21a72799d6415063257698dcce95ad8"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/feeds": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.x-dev",
+                    "datestamp": "1380481305",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "beltofte",
+                    "homepage": "https://www.drupal.org/user/151799"
+                }
+            ],
+            "description": "HTTPFetcher with support for appending request headers.",
+            "homepage": "https://www.drupal.org/project/feeds_httpfetcher_append_headers",
+            "support": {
+                "source": "http://cgit.drupalcode.org/feeds_httpfetcher_append_headers"
+            },
+            "time": "2013-09-28T14:47:56+00:00"
+        },
+        {
+            "name": "drupal/feedspreview",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/feedspreview",
+                "reference": "9247043eb418464e76c9cd83eed4d61452225d48"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/feeds": "*"
+            },
+            "require-dev": {
+                "drupal/feeds_tamper": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.x-dev",
+                    "datestamp": "1487418184",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "MegaChriz",
+                    "homepage": "https://www.drupal.org/user/654114"
+                }
+            ],
+            "description": "Preview the feeds source content before importing.",
+            "homepage": "https://www.drupal.org/project/feedspreview",
+            "support": {
+                "source": "http://cgit.drupalcode.org/feedspreview"
+            },
+            "time": "2017-02-18T11:41:43+00:00"
         },
         {
             "name": "drupal/field_formatter_settings",
@@ -3687,6 +3931,114 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/mailsystem"
             }
+        },
+        {
+            "name": "drupal/module_builder",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/module_builder",
+                "reference": "f731b22fede019962b32bbb7b32403c751d6222d"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.x-dev",
+                    "datestamp": "1463776160",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ModuleBuilder\\": ""
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "binduwavell",
+                    "homepage": "https://www.drupal.org/user/8873"
+                },
+                {
+                    "name": "dmitrig01",
+                    "homepage": "https://www.drupal.org/user/47566"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                }
+            ],
+            "description": "Builds scaffolding for custom modules.",
+            "homepage": "https://www.drupal.org/project/module_builder",
+            "support": {
+                "source": "http://cgit.drupalcode.org/module_builder"
+            },
+            "time": "2016-05-20T20:35:39+00:00"
+        },
+        {
+            "name": "drupal/pdf_export",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/pdf_export",
+                "reference": "479c980127d3aa146a0802114c7bf77bbd2fb035"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/libraries": "*"
+            },
+            "require-dev": {
+                "drupal/views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.x-dev",
+                    "datestamp": "1492900742",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "gabrielmachadosantos",
+                    "homepage": "https://www.drupal.org/user/1329448"
+                },
+                {
+                    "name": "nbouhid",
+                    "homepage": "https://www.drupal.org/user/1887682"
+                }
+            ],
+            "description": "Gives the ability to print as PDF any content.",
+            "homepage": "https://www.drupal.org/project/pdf_export",
+            "support": {
+                "source": "http://cgit.drupalcode.org/pdf_export"
+            },
+            "time": "2017-04-22T22:38:08+00:00"
         },
         {
             "name": "drupal/plupload",
@@ -9486,7 +9838,12 @@
         "drupal/job_scheduler": 15,
         "drupal/jsonb": 10,
         "drupal/rules_conditional": 10,
-        "drupal/sheetnode": 10
+        "drupal/sheetnode": 10,
+        "drupal/content_type_clone": 20,
+        "drupal/feeds_httpfetcher_append_headers": 20,
+        "drupal/feedspreview": 20,
+        "drupal/module_builder": 20,
+        "drupal/pdf_export": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
