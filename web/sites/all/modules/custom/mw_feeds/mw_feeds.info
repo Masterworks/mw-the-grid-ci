@@ -1,0 +1,12 @@
+name = MW Feeds
+description = "Provides custom feed handling upon updating of an existing Campaign node."
+package = MW
+core = 7.x
+configure = admin/config/administration/mw_feeds
+
+dependencies[] = system (>7.50)
+dependencies[] = feeds
+dependencies[] = hook_post_action
+version = "7.x-1.0-dev"
+core = "7.x"
+project = mw_feeds
