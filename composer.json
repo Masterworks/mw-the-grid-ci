@@ -113,7 +113,8 @@
     "drupal/feeds_httpfetcher_append_headers": "dev-1.x",
     "drupal/feedspreview": "dev-1.x",
     "drupal/module_builder": "dev-2.x",
-    "drupal/pdf_export": "dev-1.x"
+    "drupal/pdf_export": "dev-1.x",
+    "drupal/node_authored_select": "^1.4"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.2",
