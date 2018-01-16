@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f96de8f08e63ec422e5baec0e19889a",
+    "content-hash": "51e7460ce01b79e3f24d404068b92e86",
     "packages": [
         {
             "name": "composer/installers",
@@ -2841,6 +2841,58 @@
                 "source": "http://cgit.drupalcode.org/feeds_httpfetcher_append_headers"
             },
             "time": "2013-09-28T14:47:56+00:00"
+        },
+        {
+            "name": "drupal/feeds_jsonpath_parser",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/feeds_jsonpath_parser",
+                "reference": "7.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/feeds_jsonpath_parser-7.x-1.0.zip",
+                "reference": "7.x-1.0",
+                "shasum": "99ea538aa9360ddf4e59f313b2666260bdb65e74"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/feeds": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.0",
+                    "datestamp": "1435272780",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "RavindraSingh",
+                    "homepage": "https://www.drupal.org/user/2219678"
+                },
+                {
+                    "name": "twistor",
+                    "homepage": "https://www.drupal.org/user/473738"
+                }
+            ],
+            "description": "Parse a JSON document using JSONPath.",
+            "homepage": "https://www.drupal.org/project/feeds_jsonpath_parser",
+            "support": {
+                "source": "http://cgit.drupalcode.org/feeds_jsonpath_parser"
+            }
         },
         {
             "name": "drupal/feeds_selfnode_processor",

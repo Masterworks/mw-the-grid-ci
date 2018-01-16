@@ -131,7 +131,8 @@
     "drupal/node_clone": "^1.0",
     "drupal/pathauto": "*",
     "drupal/taxonomy_comment": "dev-1.x",
-    "drupal/maillog": "^1.0@alpha"
+    "drupal/maillog": "^1.0@alpha",
+    "drupal/feeds_jsonpath_parser": "^1.0"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.2",
