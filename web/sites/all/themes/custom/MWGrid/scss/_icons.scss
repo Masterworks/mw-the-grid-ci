@@ -1,0 +1,13 @@
+.fa-spin, .fa-spin::before, .glyphicon-spin, .glyphicon-spin::before, .fa-spin::after, .glyphicon-spin::after
+{ 
+	-webkit-filter: blur(0) !important; 
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	height: 16px;
+	width: 16px;
+	border-radius: 100px;
+}
+
+
