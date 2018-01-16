@@ -28,7 +28,7 @@
     "derhasi/composer-preserve-paths": "0.1.*",
     "drupal/composer_autoloader": "1.*",
 
-    "pantheon-systems/drops-7-composer": "7.56",
+    "pantheon-systems/drops-7-composer": "7.*",
 
     "drush/drush": "^8",
     "drupal/admin_menu": "^3.0@RC",
@@ -114,23 +114,7 @@
     "drupal/feedspreview": "dev-1.x",
     "drupal/module_builder": "dev-2.x",
     "drupal/pdf_export": "dev-1.x",
-    "drupal/node_authored_select": "^1.4",
-    "drupal/override_node_options": "^1.13",
-    "drupal/bulk_author_update": "^1.7",
-    "drupal/fc": "^1.0@RC",
-    "drupal/feed_import": "^3.4",
-    "drupal/feeds": "^2.0@beta",
-    "drupal/feeds_ex": "^1.0@beta",
-    "drupal/feeds_httpfetcher_aa": "^1.0@RC",
-    "drupal/feeds_selfnode_processor": "^1.0@beta",
-    "drupal/feeds_tamper": "^1.2",
-    "drupal/mailsystem": "^2.34",
-    "drupal/media": "^2.14",
-    "drupal/mimemail": "^1.0",
-    "drupal/module_filter": "^2.1",
-    "drupal/node_clone": "^1.0",
-    "drupal/pathauto": "*",
-    "drupal/taxonomy_comment": "dev-1.x"
+    "drupal/node_authored_select": "^1.4"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.2",
