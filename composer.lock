@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "49f33f11bd891535f8cf4869d7f4e14e",
+    "content-hash": "5f96de8f08e63ec422e5baec0e19889a",
     "packages": [
         {
             "name": "composer/installers",
@@ -4294,6 +4294,66 @@
             "homepage": "https://www.drupal.org/project/libraries",
             "support": {
                 "source": "http://cgit.drupalcode.org/libraries"
+            }
+        },
+        {
+            "name": "drupal/maillog",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/maillog",
+                "reference": "7.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/maillog-7.x-1.0-alpha1.zip",
+                "reference": "7.x-1.0-alpha1",
+                "shasum": "5d263ac943e328976217251906e390be98f1caf5"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.0-alpha1",
+                    "datestamp": "1405886928",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "DamienMcKenna",
+                    "homepage": "https://www.drupal.org/user/108450"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "pluess",
+                    "homepage": "https://www.drupal.org/user/84659"
+                }
+            ],
+            "description": "Utility to log all Mails for debugging purposes. It's possible to suppress mail delivery for e.g. dev or staging systems.",
+            "homepage": "https://www.drupal.org/project/maillog",
+            "support": {
+                "source": "http://cgit.drupalcode.org/maillog"
             }
         },
         {
@@ -10733,7 +10793,8 @@
         "drupal/feeds_ex": 10,
         "drupal/feeds_httpfetcher_aa": 5,
         "drupal/feeds_selfnode_processor": 10,
-        "drupal/taxonomy_comment": 20
+        "drupal/taxonomy_comment": 20,
+        "drupal/maillog": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

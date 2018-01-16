@@ -130,7 +130,8 @@
     "drupal/module_filter": "^2.1",
     "drupal/node_clone": "^1.0",
     "drupal/pathauto": "*",
-    "drupal/taxonomy_comment": "dev-1.x"
+    "drupal/taxonomy_comment": "dev-1.x",
+    "drupal/maillog": "^1.0@alpha"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.2",
@@ -180,7 +181,9 @@
       "web/sites/all/libraries",
       "web/sites/all/drush",
       "web/sites/default/settings.php",
-      "web/sites/default/files"
+      "web/sites/default/files",
+      "web/sites/all/themes/custom",
+      "web/sites/all/modules/custom"
     ],
     "build-env": {
       "install-cms": [
